@@ -170,25 +170,49 @@ body {
 }
 
 .panel {
-  background: var(--surface);
-  box-shadow: 0 2px 12px 0 rgba(33, 33, 33, 0.04);
-  border-radius: 12px;
-  flex: 1 1 330px;
-  min-width: 280px;
-  max-width: 400px;
+  background: linear-gradient(99deg, #fff 85%, #fff4ee 110%);
+  box-shadow: var(--elev-1);
+  border-radius: var(--corner-md);
+  flex: 1 1 320px;
+  min-width: 240px;
+  max-width: 395px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 28px 20px 22px 20px;
+  padding: 24px 15px 18px 15px;
   margin-bottom: 0;
+  border: 1.4px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.panel:focus-within {
+  box-shadow: 0 0 0 3px #ffc10770;
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .panels-area {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .panel {
+    max-width: 100%;
+    min-width: 0;
+  }
 }
 
 .panel-title {
   color: var(--primary);
-  font-size: 1.22rem;
+  font-size: 1.28rem;
   font-weight: 600;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+  letter-spacing: 0.6px;
+  line-height: 1.3;
+  text-shadow: 0 2px 16px #ff000019;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  border-left: 3.5px solid var(--accent);
 }
 
 /* Map placeholder styling */
