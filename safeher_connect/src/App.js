@@ -1,7 +1,17 @@
+// App.js: Main container for SafeHer Connect
 import React from 'react';
 import './App.css';
+import LocationSharing from './LocationSharing';
+import CrimeUpdates from './CrimeUpdates';
+import SafetyAdvice from './SafetyAdvice';
 
-// PUBLIC_INTERFACE
+/**
+ * PUBLIC_INTERFACE
+ * Main container app layout with integrated core feature stubs for:
+ *  - LocationSharing
+ *  - CrimeUpdates
+ *  - SafetyAdvice
+ */
 function App() {
   return (
     <div className="app">
@@ -20,41 +30,42 @@ function App() {
         <div className="container main-flex">
           {/* Prominent SOS Button Area */}
           <section className="sos-section" aria-labelledby="sos-title">
-            <h2 id="sos-title" className="visually-hidden">SOS: Instant Location Sharing</h2>
+            <h2 id="sos-title" className="visually-hidden">
+              SOS: Instant Location Sharing
+            </h2>
             <button className="sos-btn" aria-label="Send SOS and share my location">
-              <span className="sos-icon" role="img" aria-label="SOS">🆘</span>
+              <span className="sos-icon" role="img" aria-label="SOS">
+                🆘
+              </span>
               <span>SOS</span>
             </button>
-            <div className="sos-caption">Instantly share your live location with trusted contacts</div>
+            <div className="sos-caption">
+              Instantly share your live location with trusted contacts
+            </div>
           </section>
 
-          {/* Two-column area: Live Map & AI Tips */}
+          {/* Panels Area: Three core features */}
           <section className="panels-area">
-            {/* Live Crime Map (placeholder for now) */}
-            <div className="panel map-panel" aria-labelledby="live-map-title">
-              <h3 id="live-map-title" className="panel-title">Live Crime Map</h3>
-              <div className="map-placeholder">
-                {/* Placeholder: In production, an interactive map component will go here */}
-                <div className="map-img" aria-label="Map showing local crime updates">
-                  <span className="map-label">[Map placeholder]</span>
-                </div>
-                <p className="map-desc">Stay aware of recent incidents in your area, updated in real-time.</p>
-              </div>
+            {/* Location Sharing Feature Panel */}
+            <div className="panel" aria-labelledby="location-sharing-title">
+              <h3 id="location-sharing-title" className="panel-title">
+                Location Sharing
+              </h3>
+              <LocationSharing />
             </div>
-
-            {/* AI Safety Advice Card */}
-            <div className="panel aiadvice-panel" aria-labelledby="advice-title">
-              <h3 id="advice-title" className="panel-title">AI Safety Advice</h3>
-              <div className="ai-advice-card">
-                <div className="ai-advice-tip">
-                  {/* Placeholder for AI-generated safety advice */}
-                  "Walk confidently and stick to well-lit routes. Always let someone know your ETA."
-                </div>
-                <div className="ai-advice-meta">
-                  <span role="img" aria-label="AI">🤖</span>
-                  Personalized safety tip
-                </div>
-              </div>
+            {/* Crime Updates Feature Panel */}
+            <div className="panel" aria-labelledby="crime-updates-title">
+              <h3 id="crime-updates-title" className="panel-title">
+                Crime Updates
+              </h3>
+              <CrimeUpdates />
+            </div>
+            {/* Safety Advice Feature Panel */}
+            <div className="panel" aria-labelledby="safety-advice-title">
+              <h3 id="safety-advice-title" className="panel-title">
+                Safety Advice
+              </h3>
+              <SafetyAdvice />
             </div>
           </section>
         </div>
