@@ -25,10 +25,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--background-main);
 }
 
+/* Navbar uses secondary (dark) for prominence, white for text */
 .navbar {
-  background-color: var(--base-dark);
+  background-color: var(--secondary);
   padding: 16px;
   display: flex;
   align-items: center;
@@ -47,10 +49,11 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #fff;
 }
 
 .logo-symbol {
-  color: var(--base-light);
+  color: var(--primary); /* Safher red brand color for impact */
 }
 
 .container {
@@ -69,10 +72,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  background: transparent;
 }
 
+/* Accent color for subtitles, for energetic highlight */
 .subtitle {
-  color: var(--base-light);
+  color: var(--accent);
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -82,6 +87,7 @@ body {
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
+  color: var(--primary); /* Brand red for main titles */
 }
 
 .description {
@@ -92,23 +98,40 @@ body {
   margin-bottom: 16px;
 }
 
+/* Primary button */
 .btn {
-  background-color: var(--base-light);
-  color: white;
+  background-color: var(--primary);       /* Bold red background */
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(33, 33, 33, 0.07);
 }
 
-.btn:hover {
-  background-color: #7691ff;
+.btn:hover,
+.btn:focus {
+  background-color: #d90000;              /* Slightly darker red for hover */
+  box-shadow: 0 4px 12px 0 rgba(33, 33, 33, 0.12);
+  outline: none;
 }
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
+}
+
+/* Style any accent/action buttons if needed */
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: #ddb100; /* Stronger yellow on hover */
+  color: var(--secondary);
 }
