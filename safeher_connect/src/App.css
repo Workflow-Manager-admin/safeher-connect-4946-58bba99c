@@ -302,30 +302,40 @@ body {
   .container {
     padding: 0 10px;
   }
-  .panels-area {
-    flex-direction: column;
-    gap: 20px;
-  }
+}
+
+@media (max-width: 700px) {
   .panel {
-    max-width: 100%;
-    min-width: 0;
+    padding: 18px 4vw;
+    min-width: unset;
+    max-width: unset;
   }
-  .main-container {
-    padding-top: 74px;
-    padding-bottom: 22px;
+  .sos-section {
+    padding: 18px 0 16px 0;
+  }
+  .sos-btn {
+    font-size: 1rem;
+    padding: 18px 10vw;
   }
 }
 
 @media (max-width: 550px) {
-  .main-flex {
-    gap: 16px;
-  }
   .navbar-content .logo {
-    font-size: 0.95rem;
+    font-size: 0.93rem;
+  }
+  .panel-title {
+    font-size: 1.04rem;
+    border-left-width: 2.7px;
+    padding-left: 2px;
+  }
+  .sos-section {
+    border-radius: 11px;
+    padding: 13px 0 8px 0;
   }
   .sos-btn {
-    font-size: 1.2rem;
-    padding: 18px 24px;
+    font-size: 1.1rem;
+    padding: 15px 7vw;
+    border-radius: 69px;
   }
 }
 
