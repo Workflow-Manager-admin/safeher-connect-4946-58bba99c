@@ -431,9 +431,9 @@ body {
   text-align: center;
 }
 
-/* Primary button */
+/* Primary/action button */
 .btn {
-  background-color: var(--primary);       /* Bold red background */
+  background: linear-gradient(90deg, #ff2a2a 40%, #d90000 100%);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -441,30 +441,29 @@ body {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease, box-shadow 0.2s;
-  box-shadow: 0 2px 8px 0 rgba(33, 33, 33, 0.07);
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 9px 0 rgba(33, 33, 33, 0.09);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #d90000;              /* Slightly darker red for hover */
-  box-shadow: 0 4px 12px 0 rgba(33, 33, 33, 0.12);
+  background: linear-gradient(90deg,#d90000 30%,#a60000 100%);
+  box-shadow: 0 4px 18px 0 #ff000033;
   outline: none;
 }
 
 .btn-large {
   padding: 12px 24px;
-  font-size: 1.1rem;
+  font-size: 1.13rem;
+  border-radius: 8px;
 }
 
-/* Style any accent/action buttons if needed */
 .btn-accent {
   background-color: var(--accent);
   color: var(--secondary);
 }
-
 .btn-accent:hover,
 .btn-accent:focus {
-  background-color: #ddb100; /* Stronger yellow on hover */
+  background-color: #ddb100;
   color: var(--secondary);
 }
