@@ -43,8 +43,16 @@ body {
   display: flex;
   align-items: stretch;
   background: var(--background-main);
-  padding-top: 90px; /* Offset for navbar */
+  padding-top: 98px; /* Offset for navbar */
   padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    padding-top: 74px;
+    padding-bottom: 22px;
+  }
 }
 
 /* Layout: central column with stacked content, responsive for mobile */
@@ -53,6 +61,13 @@ body {
   flex-direction: column;
   gap: 36px;
   width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 550px) {
+  .main-flex {
+    gap: 16px;
+  }
 }
 
 /* Prominent SOS section - center, margin, impact */
