@@ -1,15 +1,23 @@
 :root {
   /* SafeHer Connect branding colors */
-  --primary: #ff0000;        /* Main brand color */
-  --secondary: #212121;      /* Deep neutral for text, structural contrast */
-  --accent: #FFC107;         /* Accent color for highlights, active states */
+  --primary: #ff0000;
+  --secondary: #212121;
+  --accent: #FFC107;
 
-  /* General palette for the light theme */
-  --background-main: #f5f5f8;      /* Soft, clean app background */
-  --surface: #ffffff;              /* White surfaces for cards, nav, etc. */
-  --text-color: #212121;           /* Standard dark text */
-  --text-secondary: #555555;       /* Slightly muted dark gray */
-  --border-color: #e0e0e0;         /* Gentle border/shadow line */
+  /* Typography and colors */
+  --background-main: #f5f5f8;
+  --surface: #fff;
+  --text-color: #212121;
+  --text-secondary: #555555;
+  --border-color: #e0e0e0;
+  --corner-lg: 16px;
+  --corner-md: 12px;
+  --corner-sm: 8px;
+  --elev-1: 0 2px 12px 0 rgba(33,33,33,0.04);
+  --elev-sos: 0 2px 20px 0 rgba(255, 0, 0, 0.09);
+  --elev-accent: 0 2px 4px 0 rgba(255,193,7,0.06);
+  --focus-ring: 0 0 0 3px #ffc10766;
+  --transition: 0.18s cubic-bezier(0.4,0.1,0.4,1);
 }
 
 body {
