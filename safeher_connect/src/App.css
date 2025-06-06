@@ -410,22 +410,25 @@ body {
   color: var(--accent);
   font-weight: 500;
   font-size: 1.1rem;
+  letter-spacing: 0.2px;
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 3.15rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.21;
   margin: 0;
   color: var(--primary); /* Brand red for main titles */
+  letter-spacing: 0.9px;
 }
 
 .description {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.09rem;
+  line-height: 1.47;
   color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* Primary button */
