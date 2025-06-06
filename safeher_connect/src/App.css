@@ -355,29 +355,35 @@ body {
 /* Navbar uses secondary (dark) for prominence, white for text */
 .navbar {
   background-color: var(--secondary);
-  padding: 16px;
+  padding: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2.5px solid #ff000013;
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  box-shadow: 0 2px 12px #2121210d;
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.32rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
   color: #fff;
+  text-shadow: 0 2px 8px #ff000029, 0 1px 0 #fff4;
+  letter-spacing: 0.7px;
+  user-select: none;
 }
 
 .logo-symbol {
-  color: var(--primary); /* Safher red brand color for impact */
+  color: var(--primary); /* SafeHer red brand color for impact */
+  text-shadow: 0 1px 10px #ff000025;
+  font-size: 1.4em;
 }
 
 .container {
